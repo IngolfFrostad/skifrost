@@ -1,78 +1,87 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skifrost – Kvalifiserte fagarbeidere</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#333; }
-    header { background:#666; color:#fff; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
-    header h1 { font-size:3em; margin:0; }
-    header p { font-size:1.2em; margin:20px 0; }
-    .btn { background:#fff; color:#333; padding:12px 24px; border:none; border-radius:6px; font-size:1em; cursor:pointer; text-decoration:none; }
-    .btn:hover { background:#ddd; }
-    section { padding:60px 20px; max-width:1000px; margin:auto; }
-    h2 { color:#004466; margin-bottom:20px; }
-    .kontakt { background:#f4f4f4; padding:30px; border-radius:10px; }
-    footer { background:#00334d; color:#fff; text-align:center; padding:20px; margin-top:40px; }
-    input, textarea { width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px; }
-    button { background:#004466; color:#fff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; }
-    button:hover { background:#006699; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skifrost</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <!-- Hero-seksjon -->
-  <header>
-    <img src="logo.png" alt="Skifrost logo" style="width:100px; margin-bottom:20px;">
-    <h1>❄️ Skifrost</h1>
-    <p>Én kontakt. Ett ansvar. Ryddig, fleksibelt og effektivt.</p>
-    <a href="#om" class="btn">Les mer</a>
-  </header>
+<body class="font-sans text-gray-800 bg-white">
 
-  <!-- Om Skifrost -->
-  <section id="om">
-    <h2>Om Skifrost</h2>
-    <p><strong>Vi i Skifrost er nordmenn</strong> som kjenner de høye kravene i norsk bygg- og industribransje.</p>
-    <p>Derfor kobler vi norske bedrifter med <strong>kvalifiserte bygg- og anleggsarbeidere</strong> og <strong>erfarne stålarbeidere til skipsindustri og industri</strong> fra Litauen.</p>
-    <p>Vi tilbyr fleksible bemanningsløsninger og spesialtilpassede industriprodukter – med norsk oppfølging og kvalitetssikring gjennom hele prosessen.</p>
+  <!-- Hero -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://source.unsplash.com/1600x900/?snow,construction');">
+    <div class="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-center px-6">
+      <h1 class="text-5xl font-bold text-white mb-4">❄️ Skifrost</h1>
+      <p class="text-xl text-gray-200 max-w-2xl">Én kontakt. Ett ansvar. Ryddig, fleksibelt og effektivt.</p>
+      <a href="#about" class="mt-6 inline-block bg-white text-black font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-200 transition">Les mer</a>
+    </div>
+  </section>
+
+  <!-- Om oss -->
+  <section id="about" class="py-16 px-6 bg-gray-50 text-center">
+    <h2 class="text-3xl font-bold mb-6">Hva vi gjør</h2>
+    <p class="max-w-3xl mx-auto text-lg leading-relaxed mb-6">
+      <strong>Vi i Skifrost er nordmenn</strong> som kjenner de høye kravene i norsk bygg- og industribransje.
+      Vi kobler norske bedrifter med <strong>kvalifiserte bygg- og anleggsarbeidere</strong> 
+      og <strong>erfarne stålarbeidere til skipsindustri og industri</strong> fra Litauen.
+    </p>
+    <p class="max-w-3xl mx-auto text-lg leading-relaxed">
+      Vi tilbyr fleksible bemanningsløsninger og spesialtilpassede industriprodukter – 
+      med norsk oppfølging og kvalitetssikring gjennom hele prosessen.
+    </p>
   </section>
 
   <!-- Hvordan vi jobber -->
-  <section id="hvordan">
-    <h2>Hvordan vi jobber</h2>
-    <ol>
-      <li><strong>Behov:</strong> Du tar kontakt og beskriver behovet: antall personer, fagområder, varighet og oppstart.</li>
-      <li><strong>Løsning:</strong> Vi setter sammen et kvalifisert team innen bygg, anlegg eller stål – tilpasset ditt prosjekt.</li>
-      <li><strong>Avtale:</strong> Vi sørger for en ryddig avtale, god struktur og oversikt gjennom hele oppdraget.</li>
-      <li><strong>Utførelse:</strong> Arbeidet settes i gang. Skifrost følger deg opp med tett kommunikasjon fra start til slutt.</li>
-    </ol>
+  <section class="py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">🔧 Hvordan vi jobber</h2>
+    <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto text-center">
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold mb-2">1. Behov</h3>
+        <p class="text-gray-600">Du tar kontakt og beskriver behovet: antall personer, fagområder, varighet og oppstart.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold mb-2">2. Løsning</h3>
+        <p class="text-gray-600">Vi setter sammen et kvalifisert team innen bygg, anlegg eller stål – tilpasset ditt prosjekt.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold mb-2">3. Avtale</h3>
+        <p class="text-gray-600">Vi sørger for en ryddig avtale, struktur og oversikt gjennom hele oppdraget.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold mb-2">4. Utførelse</h3>
+        <p class="text-gray-600">Arbeidet settes i gang. Skifrost følger deg opp med tett kommunikasjon fra start til slutt.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Kontakt -->
-  <section id="kontakt" class="kontakt">
-    <h2>Kontakt oss</h2>
-    <p>Er du på jakt etter dyktige fagarbeidere eller stålkonstruksjoner til ditt neste prosjekt?<br>
+  <section id="contact" class="py-16 px-6 bg-gray-900 text-white text-center">
+    <h2 class="text-3xl font-bold mb-6">📞 Kontakt oss</h2>
+    <p class="mb-6 text-lg">Er du på jakt etter dyktige fagarbeidere eller stålkonstruksjoner til ditt neste prosjekt?  
     Ta kontakt med oss – vi svarer raskt og tilpasser løsningen til dine behov.</p>
+    <a href="mailto:salg@skifrost.no" class="inline-block bg-white text-black font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-200 transition">Send e-post</a>
 
-    <p><strong>Kontaktinformasjon:</strong><br>
-    Skifrost<br>
-    📍 Norge / Litauen<br>
-    ✉️ <a href="mailto:salg@skifrost.no">salg@skifrost.no</a><br>
-    📞 <a href="tel:+4790597445">+47 905 97 445</a></p>
-
-    <form>
-      <input type="text" name="navn" placeholder="Navn" required>
-      <input type="text" name="firma" placeholder="Firma">
-      <input type="email" name="email" placeholder="E-postadresse" required>
-      <input type="tel" name="telefon" placeholder="Telefonnummer" required>
-      <textarea name="melding" placeholder="Hva kan vi hjelpe deg med?"></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <div class="mt-10 max-w-lg mx-auto bg-white text-black rounded-xl shadow p-6">
+      <h3 class="text-xl font-semibold mb-4">📋 Kontaktskjema</h3>
+      <form class="grid gap-4">
+        <input type="text" placeholder="Navn" class="border p-3 rounded">
+        <input type="text" placeholder="Firma" class="border p-3 rounded">
+        <input type="email" placeholder="E-postadresse" class="border p-3 rounded">
+        <input type="tel" placeholder="Telefonnummer" class="border p-3 rounded">
+        <textarea placeholder="Hva kan vi hjelpe deg med?" class="border p-3 rounded"></textarea>
+        <button type="submit" class="bg-black text-white font-semibold px-6 py-3 rounded-lg hover:bg-gray-800 transition">Send</button>
+      </form>
+    </div>
+    <div class="mt-6">
+      <p>✉️ <a href="mailto:salg@skifrost.no" class="underline">salg@skifrost.no</a></p>
+      <p>📞 <a href="tel:+4790597445" class="underline">+47 905 97 445</a></p>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2025 Skifrost – Kvalitet og trygghet i hvert prosjekt</p>
+  <footer class="py-6 text-center bg-gray-800 text-gray-400">
+    <p>© 2025 Skifrost. Alle rettigheter reservert.</p>
   </footer>
+
 </body>
 </html>
